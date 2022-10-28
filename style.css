@@ -1,0 +1,131 @@
+.neonText {
+  animation: flicker 1.5s infinite alternate;
+  color: #fff;
+}
+
+h1 {
+  font-size: 4.2rem;    
+}
+
+/* Flickering animation */
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #0fa,
+      0 0 80px #0fa,
+      0 0 90px #0fa,
+      0 0 100px #0fa,
+      0 0 150px #0fa;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+  
+h2 {
+ font-size: 1.8rem;
+}
+
+.container {
+  margin-top: 15vh;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #010a01;
+}  
+
+h1, h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.desc-container{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.desc{
+  width: 30%;
+}
+
+h3{
+  font-size: 38px;
+  font-weight: 500;
+  text-align: center;
+  font-family: "Helvetica Neue", sans-serif;
+  background-image: linear-gradient(to left, #17E8A6, #DDEBD9);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  margin-left : 5%;
+  margin-top : 30px;
+}
+
+h4{
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 40px;
+  font-family: "Helvetica Neue", sans-serif;
+  color : #fff;
+  
+  text-align: center;
+  margin-left : 5%;
+  margin-right : 5%;
+  margin-top : -25px;
+}
+
+ul{
+  font-size: 18px;
+  font-family: "Helvetica Neue", sans-serif;
+  color : #fff;
+  margin-left : 5%;
+  margin-right : 5%;
+  margin-top : -25px;
+  font-weight: 400;
+}
+
+.img_atas{
+  width : 450px;
+  height : 225px;
+  position : absolute;
+  z-index : -1;
+  margin-left : 80%;
+}
+
+.tools-container{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.tools{
+  width: 30%;
+}
+
+.tools ul{
+  text-align: center;
+  list-style: none;
+  font-size: 25px;
+}
+
+.tools ul li{
+  margin-top: 20px;
+}
