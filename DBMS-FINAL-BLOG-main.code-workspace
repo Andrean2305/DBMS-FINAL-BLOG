@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../DBMS-FINAL-BLOG-main"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "DBMS-FINAL-BLOG"
+	}
+}

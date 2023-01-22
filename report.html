@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBMS Final Project</title>
+
+    <link href="report-style.css" rel="stylesheet" type="text/css" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+     <!-- bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <div class="navbar-ctn">
+    <div class="navbar">
+      <!-- <a href="index.html" class="desc">Description</a> -->
+      <div class="dropdown">
+        <button onclick="myFunction()" value="Description ↓" class="dropbtn">Description ↓</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="index.html#problem">Problem</a>
+          <a href="index.html#solution">Solution</a>
+          <a href="index.html#idea">Idea</a>
+          <a href="index.html#tools">Tools</a>
+        </div>
+      </div>
+      <a href="report.html" class="report">Final Report</a>
+      <a href="contribution.html" class="contribution">Contribution</a>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="section4">
+      <section class="curved"></section>
+      <div class = "h3-container">
+        <h3 class ="regularText" filter-content="To">Final Project Report</h3> 
+        <h2 class ="regularKalimat"> </h2> 
+      </div>
+      <div class = "tools-container">
+        <div class = "tools1">
+          <ul>
+            <li>TABLE EXPLANATION & NORMALIZATION</li>
+            <h3 class ="regularKalimat"></h3> 
+    </div>
+
+  <div class = "main-table">
+    <table class="tg">
+      <thead>
+        <tr>
+          <th class="tg-ywgy">Name</th>
+          <th class="tg-ywgy">Type</th>
+          <th class="tg-ywgy">Collation</th>
+          <th class="tg-ywgy">Attributes</th>
+          <th class="tg-ywgy">Null</th>
+          <th class="tg-ywgy">Default</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tg-dfhg">1</td>
+          <td class="tg-9v7m">cID #</td>
+          <td class="tg-26jz">int(11)</td>
+          <td class="tg-aai7"></td>
+          <td class="tg-26jz">No</td>
+          <td class="tg-9pwe">None</td>
+        </tr>
+        <tr>
+          <td class="tg-dfhg">2</td>
+          <td class="tg-9v7m">Fuel #</td>
+          <td class="tg-26jz">varchar(50)</td>
+          <td class="tg-26jz">utf8mb4_general_ci</td>
+          <td class="tg-26jz">No</td>
+          <td class="tg-9pwe">None</td>
+        </tr>
+        <tr>
+          <td class="tg-dfhg">3</td>
+          <td class="tg-9v7m">Brand #</td>
+          <td class="tg-26jz">varchar(255)</td>
+          <td class="tg-26jz">utf8mb4_general_ci</td>
+          <td class="tg-26jz">Yes</td>
+          <td class="tg-9pwe">NULL</td>
+        </tr>
+        <tr>
+          <td class="tg-dfhg">4</td>
+          <td class="tg-9v7m">Model</td>
+          <td class="tg-26jz">varchar(255)</td>
+          <td class="tg-26jz">utf8mb4_general_ci</td>
+          <td class="tg-26jz">Yes</td>
+          <td class="tg-9pwe">NULL</td>
+        </tr>
+        <tr>
+          <td class="tg-dfhg">5</td>
+          <td class="tg-9v7m">Price</td>
+          <td class="tg-26jz">int(11)</td>
+          <td class="tg-aai7"></td>
+          <td class="tg-26jz">Yes</td>
+          <td class="tg-9pwe">NULL</td>
+        </tr>
+        <tr>
+          <td class="tg-dfhg">6</td>
+          <td class="tg-9v7m">EngineSize</td>
+          <td class="tg-26jz">int(11)</td>
+          <td class="tg-aai7"></td>
+          <td class="tg-26jz">Yes</td>
+          <td class="tg-9pwe">NULL</td>
+        </tr>
+        <tr>
+          <td class="tg-dfhg">7</td>
+          <td class="tg-9v7m">Stock</td>
+          <td class="tg-26jz">int(11)</td>
+          <td class="tg-aai7"></td>
+          <td class="tg-26jz">No</td>
+          <td class="tg-9pwe">None</td>
+        </tr>
+      </tbody>
+      </table>
+
+    <table class="tg1">
+      <thead>
+        <tr>
+          <th class="tg-ywgy"><span style="background-color:var(--bs-table-bg)">Name</span></th>
+          <th class="tg-ywgy"><span style="background-color:var(--bs-table-bg)">Type</span></th>
+          <th class="tg-ywgy"><span style="background-color:var(--bs-table-bg)">Collation</span></th>
+          <th class="tg-ywgy"><span style="background-color:var(--bs-table-bg)">Attributes</span></th>
+          <th class="tg-ywgy"><span style="background-color:var(--bs-table-bg)">Null</span></th>
+          <th class="tg-yla0"><span style="background-color:var(--bs-table-bg)">Default</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tg-5vzn"><span style="background-color:var(--bs-table-bg)">1</span></td>
+          <td class="tg-9v7m">custID <img src="http://localhost/phpmyadmin/themes/dot.gif" alt="Primary" width="16" height="16"></td>
+          <td class="tg-26jz">int(11)</td>
+          <td class="tg-aai7"></td>
+          <td class="tg-9pwe"><span style="background-color:var(--bs-table-bg)">No</span></td>
+          <td class="tg-8zwo">None</td>
+        </tr>
+        <tr>
+          <td class="tg-5vzn"><span style="color:var(--bs-table-striped-color);background-color:var(--bs-table-bg)">2</span></td>
+          <td class="tg-9v7m">Username</td>
+          <td class="tg-26jz">varchar(255)</td>
+          <td class="tg-26jz"><span style="font-style:normal">utf8mb4_general_ci</span></td>
+          <td class="tg-9pwe"><span style="color:var(--bs-table-striped-color);background-color:var(--bs-table-bg)">No</span></td>
+          <td class="tg-8zwo">None</td>
+        </tr>
+        <tr>
+          <td class="tg-5vzn"><span style="background-color:var(--bs-table-bg)">3</span></td>
+          <td class="tg-9v7m">Pin</td>
+          <td class="tg-26jz">varchar(255)</td>
+          <td class="tg-26jz"><span style="font-style:normal">utf8mb4_general_ci</span></td>
+          <td class="tg-9pwe"><span style="background-color:var(--bs-table-bg)">No</span></td>
+          <td class="tg-8zwo">None</td>
+        </tr>
+        <tr>
+          <td class="tg-5vzn"><span style="color:var(--bs-table-striped-color);background-color:var(--bs-table-bg)">4</span></td>
+          <td class="tg-9v7m">CarPreference</td>
+          <td class="tg-26jz">varchar(255)</td>
+          <td class="tg-26jz"><span style="font-style:normal">utf8mb4_general_ci</span></td>
+          <td class="tg-9pwe"><span style="color:var(--bs-table-striped-color);background-color:var(--bs-table-bg)">Yes</span></td>
+          <td class="tg-8zwo">NULL</td>
+        </tr>
+        <tr>
+          <td class="tg-5vzn"><span style="background-color:var(--bs-table-bg)">5</span></td>
+          <td class="tg-9v7m">Job</td>
+          <td class="tg-26jz">varchar(255)</td>
+          <td class="tg-26jz"><span style="font-style:normal">utf8mb4_general_ci</span></td>
+          <td class="tg-9pwe"><span style="background-color:var(--bs-table-bg)">No</span></td>
+          <td class="tg-8zwo">None</td>
+        </tr>
+      </tbody>
+      </table>
+  </div>
+
+  <h3 class ="inText" filter-content="To">The car table is our main table which conclude all of our car model that will be used to give recommendations to our customer before they  buy the car. It also be used to store all of data of our stock, which basically our 0NF table.
+    With the customer table we can store the user's username and password, so they can have their own profile. We also use the information from the table so people can’t have the same username. They also can choose their own preference for a car, they can either choose a performance car or practical car. This chosen option will be stored into the table and we can use it to make a recommendation system based on what the user chooses.</h3> 
+
+    <table class="tg">
+      <thead>
+        <tr>
+          <th class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Cid</span></th>
+          <th class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Fuel</span></th>
+          <th class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Brand</span></th>
+          <th class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Model</span></th>
+          <th class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Price</span></th>
+          <th class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">EngineSize</span></th>
+          <th class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Stock</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">2</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamina</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Honda</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">BRV</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">42000</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">3</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">18</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">3</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertalite</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Honda</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">CRV</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">43500</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">3</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">15</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">4</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamax Turbo</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Lamborghini</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Aventador</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">325000</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">12</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">22</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">5</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Premium</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Ferrari</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Speedsz</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">275000</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">7</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">14</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">7</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamax Turbo</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Acura</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">AcuNos</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">33000</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">7</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">121</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">8</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Premium</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Toyota</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Avanza</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">25500</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">4</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">32</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">9</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamax Turbo</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Tesla</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">ZapCar</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">75500</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">9</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">55</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">10</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Premium</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Tesla</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">ThunderBlast</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">55600</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">5</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">22</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">11</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamax Turbo</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Toyota</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Supra</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">65000</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">6</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">50</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">12</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamax</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Toyota</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Zenix</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">40000</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">4</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">70</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">13</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamax Turbo</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Lexus</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">RX300</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">72000</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">6</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">42</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">14</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamax Turbo</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Lexus</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">NX300</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">66000</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">4</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">50</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">15</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamax Turbo</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Lexus</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">LC500</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">80000</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">8</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">30</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">16</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamax</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Subaru</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Forester</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">38000</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">4</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">100</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">17</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamax</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Subaru</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">XV</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">37500</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">4</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">90</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">18</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamax Turbo</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Subaru</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">BRZ</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">45000</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">4</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">85</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">19</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamax Turbo</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Lexus</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">NX300</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">66000</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">4</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">50</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">20</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamax Turbo</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">BMW</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">X3</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">70000</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">4</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">60</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">21</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamax Turbo</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">BMW</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">X3 Xdrive</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">76000</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">4</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">55</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">22</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamax Turbo</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">BMW</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">240i</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">72000</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">6</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">40</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">23</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamina Dex</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">BMW</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">X5 40d</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">74000</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">6</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">56</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">24</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamina Dex</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">BMW</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">530</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">71000</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">6</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">45</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">25</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Electric</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">BMW</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">ix</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">85000</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">0</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">30</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">26</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamax Turbo</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">BMW</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">220i</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">72000</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">4</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">40</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">27</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamax</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">BMW</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">X1</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">42000</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">3</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">100</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">28</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamax</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Mitsubishi</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Xpander</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">18000</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">4</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">150</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">29</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamax</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Mitsubishi</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Xpander Cross</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">19000</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">4</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">140</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">30</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamina Dex</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Mitsubishi</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pajero</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">48000</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">6</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">108</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">31</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamina Dex</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Toyota</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Innova Reborn</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">38500</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">4</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">75</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">32</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamina Dex</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Toyota</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Fortuner</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">40000</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">6</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">73</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">33</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamax</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Honda</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">BRV</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">19000</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">4</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">165</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">34</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamax</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Honda</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">WRV</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">19500</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">4</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">130</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">35</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamax Turbo</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Honda</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">CRV</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">34500</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">4</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">122</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">36</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Electric</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Tesla</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Model 3</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">80000</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">0</span></td>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">64</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+  <h3 class ="inText"> This is all our car models in our car tables. All the models have their own price which we can change and add. So, people won’t miss the time to buy ready stocked cars. And they can also find if the stock is already out.</h3>
+  
+  <table class="tg">
+    <thead>
+      <tr>
+        <th class="tg-pdeq"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">#</span></th>
+        <th class="tg-pdeq"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Name</span></th>
+        <th class="tg-pdeq"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Type</span></th>
+        <th class="tg-pdeq"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Collation</span></th>
+        <th class="tg-pdeq"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Attributes</span></th>
+        <th class="tg-pdeq"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Null</span></th>
+        <th class="tg-pdeq"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Default</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="tg-l38m"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">1</span></td>
+        <td class="tg-pdeq"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Fuel</span></td>
+        <td class="tg-jxgv"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">varchar(50)</span></td>
+        <td class="tg-jxgv"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">utf8mb4_general_ci</span></td>
+        <td class="tg-jxgv"></td>
+        <td class="tg-jxgv"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">No</span></td>
+        <td class="tg-jxgv"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">None</span></td>
+      </tr>
+      <tr>
+        <td class="tg-l38m"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">2</span></td>
+        <td class="tg-pdeq"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Price</span></td>
+        <td class="tg-jxgv"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">int(11)</span></td>
+        <td class="tg-jxgv"></td>
+        <td class="tg-jxgv"></td>
+        <td class="tg-jxgv"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Yes</span></td>
+        <td class="tg-jxgv"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">NULL</span></td>
+      </tr>
+      <tr>
+        <td class="tg-l38m"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">3</span></td>
+        <td class="tg-pdeq"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">CO2Emmision</span></td>
+        <td class="tg-jxgv"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">int(11)</span></td>
+        <td class="tg-jxgv"></td>
+        <td class="tg-jxgv"></td>
+        <td class="tg-jxgv"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">No</span></td>
+        <td class="tg-jxgv"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">None</span></td>
+      </tr>
+      <tr>
+        <td class="tg-dvpl"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">4</span></td>
+        <td class="tg-fymr"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Octane</span></td>
+        <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">int(11)</span></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">No</span></td>
+        <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">None</span></td>
+      </tr>
+    </tbody>
+    </table>
+  
+    <h3 class ="inText">Next is the fuel table, The use of this fuel table to show our customer what is the quality of the fuel from the car that they are going to buy. We also provide the information about the price, so they can estimate the price they need to spend to drive the car they are going to buy. This table has fuel as the primary key, and it is the foreign key to attribute fuel of table cars. The reason we can easily change one of the fuel types information. It is also easier if we want to add some more information about the fuel. 
+    </h3>
+
+    <table class="tg">
+      <thead>
+        <tr>
+          <th class="tg-pdeq"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Fuel</span></th>
+          <th class="tg-pdeq"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Price</span></th>
+          <th class="tg-pdeq"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">CO2Emmision</span></th>
+          <th class="tg-pdeq"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Octane</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tg-jxgv"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Electric</span></td>
+          <td class="tg-u0ix"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">4200</span></td>
+          <td class="tg-l38m"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">0</span></td>
+          <td class="tg-l38m"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">0</span></td>
+        </tr>
+        <tr>
+          <td class="tg-jxgv"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertalite</span></td>
+          <td class="tg-u0ix"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">3200</span></td>
+          <td class="tg-l38m"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">200</span></td>
+          <td class="tg-l38m"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">89</span></td>
+        </tr>
+        <tr>
+          <td class="tg-jxgv"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamax</span></td>
+          <td class="tg-u0ix"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">1300</span></td>
+          <td class="tg-l38m"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">155</span></td>
+          <td class="tg-l38m"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">96</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamax Turbo</span></td>
+          <td class="tg-6ic8"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">320</span></td>
+          <td class="tg-dvpl"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">188</span></td>
+          <td class="tg-dvpl"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">92</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamina</span></td>
+          <td class="tg-lqy6"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">2500</span></td>
+          <td class="tg-lqy6"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">155</span></td>
+          <td class="tg-lqy6"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">94</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pertamina Dex</span></td>
+          <td class="tg-lqy6"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">2200</span></td>
+          <td class="tg-lqy6"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">177</span></td>
+          <td class="tg-lqy6"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">95</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Premium</span></td>
+          <td class="tg-lqy6"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">120</span></td>
+          <td class="tg-lqy6"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">321</span></td>
+          <td class="tg-lqy6"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">85</span></td>
+        </tr>
+      </tbody>
+      </table>
+    
+    <h3 class ="inText">This is all the fuel type that we use for the car. They all have different information, we also add electric as fuel because some of the car don’t use fuel anymore. 
+    </h3>
+
+    <table class="tg">
+      <thead>
+        <tr>
+          <th class="tg-pdeq"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">#</span></th>
+          <th class="tg-pdeq"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Name</span></th>
+          <th class="tg-pdeq"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Type</span></th>
+          <th class="tg-pdeq"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Collation</span></th>
+          <th class="tg-dgl5"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Attributes</span></th>
+          <th class="tg-dgl5"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Null</span></th>
+          <th class="tg-dgl5"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Default</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tg-l38m"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">1</span></td>
+          <td class="tg-pdeq"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">CustID</span></td>
+          <td class="tg-jxgv"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">int(11)</span></td>
+          <td class="tg-jxgv"></td>
+          <td class="tg-ktyi"></td>
+          <td class="tg-ktyi"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">No</span></td>
+          <td class="tg-ktyi"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">None</span></td>
+        </tr>
+        <tr>
+          <td class="tg-l38m"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">2</span></td>
+          <td class="tg-pdeq"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Date</span></td>
+          <td class="tg-jxgv"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">varchar(255)</span></td>
+          <td class="tg-jxgv"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">utf8mb4_general_ci</span></td>
+          <td class="tg-ktyi"></td>
+          <td class="tg-ktyi"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">No</span></td>
+          <td class="tg-ktyi"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">None</span></td>
+        </tr>
+        <tr>
+          <td class="tg-l38m"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">3</span></td>
+          <td class="tg-pdeq"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Brand</span></td>
+          <td class="tg-jxgv"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">varchar(255)</span></td>
+          <td class="tg-jxgv"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">utf8mb4_general_ci</span></td>
+          <td class="tg-ktyi"></td>
+          <td class="tg-ktyi"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">No</span></td>
+          <td class="tg-ktyi"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">None</span></td>
+        </tr>
+        <tr>
+          <td class="tg-l38m"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">4</span></td>
+          <td class="tg-pdeq"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Model</span></td>
+          <td class="tg-jxgv"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">varchar(255)</span></td>
+          <td class="tg-jxgv"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">utf8mb4_general_ci</span></td>
+          <td class="tg-ktyi"></td>
+          <td class="tg-ktyi"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">No</span></td>
+          <td class="tg-ktyi"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">None</span></td>
+        </tr>
+        <tr>
+          <td class="tg-lqy6"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">5</span></td>
+          <td class="tg-1wig"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Price</span></td>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">int(11)</span></td>
+          <td class="tg-0lax"></td>
+          <td class="tg-0lax"></td>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">No</span></td>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">None</span></td>
+        </tr>
+      </tbody>
+      </table>
+    <h3 class = "inText">
+      This is our last table, which is the transaction table. The usage of this table is to store all the user transaction history. The history itself can be used by the user and also the admin. However, for the user they only can see their own history.  While the admin can see all the transactions to see and compare to improve our recommendation system (our main function in the application). For the date we use a simple code to find the local time of the user, so they can have their own actual date. We try to gather all the transaction information to make personalized recommendations, and not just based on some information such as car price or gas emission. In the future, we want to make our users get a recommendation based on their liking. 
+    </h3>
+  
+    <div class="section4">
+      <section class="curved"></section>
+      <div class = "h3-container">
+        <h3 class ="regularText" filter-content="To"></h3> 
+        <h2 class ="regularKalimat"> </h2> 
+      </div>
+      <div class = "tools-container">
+        <div class = "tools1">
+          <ul>
+            <li>GUI/APPLICATION</li>
+            <h3 class ="regularKalimat"></h3> 
+    </div>
+    <div class="table">
+      <img src="image2.png" alt="Picture of Man" class="man">
+      <h3 class = "inText">
+        This is the first interface that the user(customer/admin) will see when opening the application. They can input their username and password and click login if they already have the username. Or they can click sign up to make a new username and password.
+
+      </h3>
+      <img src="image1.png" alt="Picture of Man" class="man">
+      <h3 class = "inText">
+        They can input username and password using symbols, letters, or numbers. However they cannot input a username that people already took. For example, my username is a. Other people can’t create a username with a letter a, because I already took the username.  An admin can put the unique admin code to make an admin id. Finally, they can  also choose what car they like, they either choose a practical car or a performance car. This car preference will be used for our user recommendations.
+      </h3>
+      <img src="image6.png" alt="Picture of Man" class="man">
+      <h3 class = "inText">
+        This is the interface when the user already logins to the application. There are 3 features in the main interface, they are profile button, shop button, and recommendation button.
+
+      </h3>
+      <img src="image9.png" alt="Picture of Man" class="man">
+      <h3 class = "inText">
+        As you can see, in the recommendation interface, people will be recommended based on what car preference they chose.
+
+      </h3>
+      <img src="image3.png" alt="Picture of Man" class="man">
+      <h3 class = "inText">
+        This is our shop interface. They can choose the brand name and after that they can choose the model based on the brand. We connect the brand table and car table to make this. After the user chooses, they can click the exclamation symbol to find the fuel information. We make the information using table joins to take information from the car table and fuel table. After they choose the car, and the price and other information match with their preferences, they can click the buy button and then finish.
+
+      </h3>
+      <img src="image4.png" alt="Picture of Man" class="man">
+      <h3 class = "inText">
+        Now, in the profile interface, users can change their password, and their car preference. However, they cannot change the username, because username is the unique key. Actually, we can allow users to change the username and change user id to be primary, however, based on our research. Most of the applications do not allow people to change usernames. And if they already input and want to change, they can click the save button. And then, there are also history buttons.
+
+      </h3>
+      <img src="image7.png" alt="Picture of Man" class="man">
+      <h3 class = "inText">
+        In the history, users can check their transaction history, they can check the date, what car they bought, and the price. 
+
+      </h3>
+      <img src="image5.png" alt="Picture of Man" class="man">
+      <h3 class = "inText">
+        This is our admin interface, they can check dealer info, user database, and they can modify car information.
+
+      </h3>
+      <img src="image10.png" alt="Picture of Man" class="man">
+      <h3 class = "inText">
+        In the car modifier interface, admin can add new car models based on the brand. The main features of this interface are adding and deleting(kinda like undoing because you can’t choose yet). And then, changing and adding stock. as you can see the 2 buttons at the top. 
+
+      </h3>
+      <img src="image8.png" alt="Picture of Man" class="man">
+      <h3 class = "inText">
+        After they click it, the mini interface will pop out. And then, they need to choose what car model they want to change, after that they can input the car id and input how much they want to add to the stock. They can also change the stock. It is an important feature because the stock is connected to the sales system, which mean after user click buy in the shop interface, the system will check the stock first, and if there are stocks for the model the user want to buy, they decrease the stock and add to total sales in dealer info in the brand table.
+
+      </h3>
+      <img src="image12.png" alt="Picture of Man" class="man">
+      <h3 class = "inText">
+        Admin also can see the customer id of the username and what car preference they chose.  And at the right bottom of the interface, there is a transaction button.
+
+      </h3>
+      <img src="image13.png" alt="Picture of Man" class="man">
+      <h3 class = "inText">
+        While customers only can see their own transaction, an admin can see all of the transaction history from all of the customers.
+
+      </h3>
+      <img src="image11.png" alt="Picture of Man" class="man">
+      <h3 class = "inText">
+        Lastly, this is the dealer info interface. The job of this interface is to check the dealer information. So the admin can see dealer information if they want to contact the dealer. They also can check total sales that can be used as an information for whether they should stock the car brand more or less. And then, same as the car modifier, this interface also allows the admin to add dealer information to the database.
+
+      </h3>
+    </div>
+    <div class="section4">
+      <section class="curved"></section>
+      <div class = "h3-container">
+        <h3 class ="regularText" filter-content="To"></h3> 
+        <h2 class ="regularKalimat"> </h2> 
+      </div>
+      <div class = "tools-container">
+        <div class = "tools1">
+          <ul>
+            <li>CONCLUSION</li>
+            <h3 class ="regularKalimat">With the recommendation as the main feature of our application, customers or people who want to buy a car can easily pick what car they want to buy with all of the information from our application.
+            </h3> 
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>  
+</body>
+
+<script>
+  // Get the button:
+  let mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+
+  // Dropdown menu
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>
+
+</html>

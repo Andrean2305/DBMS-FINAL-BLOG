@@ -1,11 +1,9 @@
 body{
-  font-family: 'Open Sans', sans-serif;
-  width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
 }
 
 .navbar-ctn{
-  position: relative;
-  z-index: 10;
   font-size: 1.6vw;
   font-weight: 600;
   color: white;
@@ -29,7 +27,7 @@ body{
   list-style: none;
 }
 
-.navbar .report, .navbar .contribution{
+.navbar .desc, .navbar .contribution{
   color: #BFBFBF;
   font-weight: 400;
 }
@@ -37,7 +35,7 @@ body{
 /*--Dropdown Button--*/
 .dropbtn {
   background-color: rgba(75, 75, 75, 0);
-  color: white;
+  color:  #BFBFBF;
   padding: 0.8vw;
   font-size: 1.6vw;
   font-weight: 600;
@@ -70,163 +68,6 @@ body{
 .show {display:block;}
 /* ------------------------ */
 
-.body{
-  width: 33.9vw;
-  margin-top: 5.2vw;
-  margin-left: 5vw;
-}
-
-.title h2{
-  font-weight: 600;
-  font-size: 3.5vw;
-  margin-bottom: 1.6vw;
-}
-
-.title h1{
-  font-weight: 600;
-  font-size: 5vw;
-  line-height: 5.5vw;
-}
-
-.title{
-  position: absolute;
-  z-index: 3;
-}
-
-.car-png-ctn{
-  position: absolute;
-  z-index: 2;
-  width: 95%;
-  height: 55vw;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.car-png-ctn img{
-  position: absolute;
-  top: -5vw;
-  left: 55vw;
-  width: 70%;
-  pointer-events: none;
-}
-
-.prob-ctn{
-  position: absolute;
-  z-index: 1;
-  top: 36vw;
-  left: 0;
-  overflow: hidden;
-
-  padding: 7vw 8.35vw;
-  padding-bottom: 6.8vw;
-  background: #4B4B4B;
-  color: white;
-  overflow: hidden;
-}
-
-.prob-ctn h1, .idea-ctn h1, .tools-ctn h1{
-  font-size: 3.2vw;
-  font-weight: 600;
-  letter-spacing: 0.365em;
-  text-align: center;
-}
-
-.prob-ctn p, .idea-ctn p{
-  font-size: 2.4vw;
-  font-weight: 300;
-  text-align: center;
-  line-height: 202.18%;
-  margin-top: 2.65vw;
-}
-
-.man-png-ctn{
-  position: absolute;
-  z-index: 1;
-  width: 68%;
-  height: 110vw;
-  left: -10vw;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.man-png-ctn img{
-  position: absolute;
-  top: 58vw;
-  left: 0;
-  width: 50%;
-  pointer-events: none;
-}
-
-.solution-ctn{
-  position: absolute;
-  z-index: 1;
-  top: 81vw;
-  right: 0;
-
-  padding: 7vw 8.35vw;
-  padding-bottom: 6.8vw;
-}
-
-.solution-ctn h1{
-  font-size: 3.2vw;
-  font-weight: 600;
-  letter-spacing: 0.365em;
-  text-align: end;
-}
-
-.solution-ctn p{
-  font-size: 2.4vw;
-  font-weight: 300;
-  text-align: end;
-  line-height: 202.18%;
-  margin-top: 2.65vw;
-  width: 65vw;
-}
-
-.idea-ctn{
-  position: absolute;
-  z-index: 2;
-  top: 113vw;
-  left: 0;
-
-  padding: 7vw 8.35vw;
-  padding-bottom: 6.8vw;
-  color: white;
-  background-color: #212121;;
-}
-
-.tools-ctn{
-  position: absolute;
-  z-index: 5;
-  top: 176vw;
-  left: 0;
-
-  padding: 3vw 8.35vw;
-  padding-bottom: 6.8vw;
-}
-
-.list-ctn{
-  margin-top: 2.65vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-}
-
-.list-ctn .list{
-  width: 18vw;
-  text-align: center;
-
-  font-size: 2.4vw;
-  font-weight: 300;
-}
-
 /* button */
 #myBtn {
   display: none;
@@ -249,28 +90,6 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
@@ -290,7 +109,8 @@ body{
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
-  margin-top: -50px;
+  margin-top: 2%;
+
 }
 .tg1{
   color :black;
@@ -299,7 +119,7 @@ body{
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 1%;
 
 } 
 .tg1  {border-collapse:collapse;border-spacing:0;}
@@ -318,4 +138,45 @@ body{
 
 .main-table{
   width: auto;
+}
+
+.section4 .tools1 ul li{
+  font-family: "Avenir Next", sans-serif;
+  font-weight: 900;
+  font-size: 38px;
+  
+  margin-left : 5%;
+  color: rgb(51, 47, 47);
+  text-shadow: -2px 2px 0 rgb(223, 204, 204)1px -1px 0 rgb(223, 179, 231), -1px 1px 0 rgb(206, 176, 176), 1px 1px 0 rgb(190, 166, 190);
+  
+}
+
+.section4 h3{
+  margin-left: 5%;
+}
+
+.inText{
+  font-family: "Avenir Next", sans-serif;
+  font-size: 1.4vw;
+  font-weight: 300;
+  text-align: center;
+  line-height: 202.18%;
+  margin-top: 2.65vw;
+  
+  margin-left : 10%;
+  margin-right : 10%;
+
+  margin-top:  2%;
+  color: rgb(51, 47, 47);
+  text-shadow: -2px 2px 0 rgb(223, 204, 204)1px -1px 0 rgb(223, 179, 231), -1px 1px 0 rgb(206, 176, 176), 1px 1px 0 rgb(190, 166, 190);
+}
+
+.table{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.table img{
+  margin-top: 5%;
 }
